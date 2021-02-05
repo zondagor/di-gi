@@ -1,0 +1,39 @@
+/* * {
+	box-sizing: border-box;
+} */
+
+/* margin: 0px 150px 0px 61px; */
+
+.regular-container {
+	width: 1140px;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	height: 100px;
+	background: #2b4074;
+}
+
+.logo-img {
+	padding-bottom: 10px;
+}
+
+.menu-button {
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.fa-align-justify {
+	color: #2b4074;
+}
+
