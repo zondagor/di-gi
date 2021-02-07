@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Document</title>
-		<script src="https://kit.fontawesome.com/f277d011bc.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="header__inner">
-					<img class="header__logo-img" src="./images/Group 2 1.png" alt="logo image" />
-					<div class="header__menu-button centered-content">
-						<i class="fas fa-align-justify"></i>
-					</div>
-				</div>
-			</div>
-		</header>
-		<section class="top-slider">
-			<div class="container">
-				<div class="top-slider__img centered-content">
-					<div class="main-content">
-						<h1 class="heading">МЫСЛИ ГЛОБАЛЬНО</h1>
-						<p class="top-slider__desctiption">
-							Di Gі - это диджитал агентство полного цикла, направленное на самый
-							лучший результат наших клиентов в маркетинге, продажах и управлении
-						</p>
-						<button class="top-slider__details-btn centered-content">
-							<span class="top-slider__details-btn-text">ПОДРОБНЕЕ</span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f277d011bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="inner-container">
+            <img src="./images/logo.svg" alt="logo image"/>
+            <div class="header__menu-button">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</header>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+<section class="top-slider">
+    <div class="container">
+        <div class="top-slider__content">
+            <img class="top-slider__bg-img" src="./images/bg-img.jpg" alt="bg image">
+            <img class="top-slider__tranparent-bg" src="./images/transparent-bg.svg" alt="transparent image">
+
+            <h1 class="top-slider__heading">МЫСЛИ ГЛОБАЛЬНО</h1>
+            <p class="top-slider__description">
+                Di Gі - это диджитал агентство полного цикла, направленное на самый
+                лучший результат наших клиентов в маркетинге, продажах и управлении
+            </p>
+            <button class="top-slider__details-btn">ПОДРОБНЕЕ</button>
+
+            <div class="top-slider__bullets">
+                <span class="slider-bullet"></span>
+                <span class="slider-bullet"></span>
+                <span class="slider-bullet"></span>
+            </div>
+
+            <div class="slider-switchers">
+                <div class="arrow-container padding1"><i class="arrow left"></i></div>
+                <div class="arrow-container padding2"><i class="arrow right"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="top-block-bottom">
+    <div class="container flexing">
+        <div class="inner-container">
+            <div>
+                <h6>Вы полюбите нас с первой встречи!</h6>
+                <p>Мы предоставляем комплексный подход к продвижению компании,
+                    продуктов и услуг в цифровой сфере.</p>
+            </div>
+            <button class="top-block-bottom__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
