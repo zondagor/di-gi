@@ -1,0 +1,17 @@
+.top-block-bottom {
+    color: #ffffff;
+    height: 192px;
+    background-color: var(--dark-color);
+}
+
+.top-block-bottom__btn {
+    width: 200px;
+    height: 50px;
+}
+
+.flexing {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

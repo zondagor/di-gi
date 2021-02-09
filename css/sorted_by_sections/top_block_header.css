@@ -1,0 +1,21 @@
+.main-header {
+    background-color: var(--dark-color);
+    height: 100px;
+}
+
+.header__menu-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu-button:hover {
+    background-color: var(--dark-color);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}

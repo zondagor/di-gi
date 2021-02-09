@@ -1,0 +1,121 @@
+
+.services {
+    height: 546px;
+}
+
+.services__left-part {
+    width: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services__heading {
+    font-family: Roboto Condensed monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--dark-color);
+    padding-bottom: 70px;
+}
+
+.services__description {
+    color: #4A4A4A;
+    font-family: Roboto Condensed monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.services__text {
+    font-family: Roboto Condensed monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.services__inner-container {
+    height: 516px;
+    margin: 15px auto;
+    display: flex;
+}
+
+.services__description-container {
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services__right-part {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item__heading {
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-family: Roboto Condensed monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 20px;
+}
+
+.service-item {
+    border: 4px solid #ffffff;
+
+    width: 212px;
+    height: 255px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item:hover {
+    border-color: var(--dark-color);
+}
+
+.service-item:hover .service-item__description {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.service-item:hover .service-item__details {
+    display: block;
+}
+
+.service-item__description {
+    font-family: Roboto Condensed monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #9B9B9B;
+    text-align: center;
+    display: none;
+}
+
+
+
+.service-item__logo {
+    padding-bottom: 20px;
+}
+
+.service-item__details {
+    font-family: Roboto Condensed monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: var(--dark-color);
+    display: none;
+}
