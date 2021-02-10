@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/sorted_by_sections/top_block_slider.css"/>
     <link rel="stylesheet" href="css/sorted_by_sections/top_block_footer.css"/>
     <link rel="stylesheet" href="css/sorted_by_sections/services_block.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/our_projects_block.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/team-block.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/latest-news-block.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/quote_block.css"/>
 </head>
 <body>
 <header class="main-header">
@@ -26,15 +30,17 @@
     </div>
 </header>
 
-<section class="top-block__slider">
+<section class="top-block-slider">
     <div class="container">
         <div class="centered">
-            <h1 class="top-block__slider__heading">МЫСЛИ ГЛОБАЛЬНО</h1>
-            <p class="top-block__slider__description">
-                Di Gі - это диджитал агентство полного цикла, направленное на самый
-                лучший результат наших клиентов в маркетинге, продажах и управлении
-            </p>
-            <button class="top-block__slider__details-btn">ПОДРОБНЕЕ</button>
+            <div class="together">
+                <h1 class="top-block__slider__heading">МЫСЛИ ГЛОБАЛЬНО</h1>
+                <p class="top-block__slider__description">
+                    Di Gі - это диджитал агентство полного цикла, направленное на самый
+                    лучший результат наших клиентов в маркетинге, продажах и управлении
+                </p>
+                <button class="top-block__slider__details-btn">ПОДРОБНЕЕ</button>
+            </div>
 
             <div class="top-slider__bullets">
                 <span class="slider-bullet"></span>
@@ -42,34 +48,30 @@
                 <span class="slider-bullet"></span>
             </div>
         </div>
-        <!--    <div class="slider-switchers">-->
-        <!--        <div class="arrow-container padding1"><i class="arrow left"></i></div>-->
-        <!--        <div class="arrow-container padding2"><i class="arrow right"></i></div>-->
-        <!--    </div>-->
+    </div>
+    <div class="slider-switchers">
+        <div class="arrow-container padding1"><i class="arrow left"></i></div>
+        <div class="arrow-container padding2"><i class="arrow right"></i></div>
     </div>
 </section>
 
-
-
-
-
-<section class="top-block-bottom">
-    <div class="container flexing">
+<section class="top-block-footer">
+    <div class="container">
         <div class="inner-container">
-            <div>
-                <h6>Вы полюбите нас с первой встречи!</h6>
+            <div class="top-block-footer_left">
+                <h6 class="top-block-footer__heading">Вы полюбите нас с первой встречи!</h6>
                 <p>Мы предоставляем комплексный подход к продвижению компании,
                     продуктов и услуг в цифровой сфере.</p>
             </div>
-            <button class="top-block-bottom__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+            <button class="top-block-footer__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
         </div>
     </div>
 </section>
 
 <section class="services">
-    <div class="container full_height">
-        <div class="services__inner-container full_height">
-            <div class="services__left-part full_height">
+    <div class="container">
+        <div class="services__inner-container">
+            <div class="services__left-part">
                 <h2 class="services__heading">Сервис</h2>
                 <div class="services__description-container">
                     <p class="services__description">От идеи до незабываемого и измеримого результата.</p>
@@ -80,8 +82,51 @@
             </div>
             <div class="services__right-part">
                 <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/strategy.png" alt="strategy logo">
+                    <h6 class="service-item__heading">СТРАТЕГИЯ</h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/analysis.png" alt="strategy logo">
+                    <h6 class="service-item__heading">АНАЛИЗ</h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/social_medias.png" alt="strategy logo">
+                    <h6 class="service-item__heading">СОЦ СЕТИ</h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/development.png" alt="strategy logo">
+                    <h6 class="service-item__heading">РАЗВИТИЕ</h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/content.png" alt="strategy logo">
+                    <h6 class="service-item__heading">КОНТЕНТ </h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
                     <img class="service-item__logo" src="./images/services_icons/design_ux.png" alt="design_ux logo">
                     <h6 class="service-item__heading">ДИЗАЙН UX</h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/targeted_add.png" alt="strategy logo">
+                    <h6 class="service-item__heading">ТАРГЕТИРОВАННАЯ
+                        РЕКЛАМА</h6>
+                    <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
+                    <span class="service-item__details">ПОДРОБНЕЕ →</span>
+                </div>
+                <div class="service-item">
+                    <img class="service-item__logo" src="./images/services_icons/product.png" alt="strategy logo">
+                    <h6 class="service-item__heading">ПРОДУКТ</h6>
                     <p class="service-item__description">Создадим уникальный и удобный дизайн.</p>
                     <span class="service-item__details">ПОДРОБНЕЕ →</span>
                 </div>
@@ -89,6 +134,96 @@
         </div>
     </div>
 </section>
+
+<section class="our-projects">
+    <div class="container centered">
+        <div class="our-projects__inner-container">
+            <div class="our_projects__heading">
+                <h2 class="our_projects__heading__text">Наши Проекты</h2>
+                <div class="line light-line"></div>
+            </div>
+            <div class="our-projects__projects">
+                <div class="project">
+                    <img class="project-img" src="./images/our_projects_images/portfolio-1.svg" alt="project img">
+                    <img class="project-img__transparent-bg"
+                         src="./images/our_projects_images/yellow-transparent-bg.svg" alt="project img">
+                    <img class="project-img__explore-icons" src="./images/our_projects_images/explore-icons.svg"
+                         alt="explore icons">
+                    <h6 class="project__name">Lalique бутик</h6>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="./images/our_projects_images/portfolio-2.svg" alt="project img">
+                    <img class="project-img__transparent-bg"
+                         src="./images/our_projects_images/yellow-transparent-bg.svg" alt="project img">
+                    <img class="project-img__explore-icons" src="./images/our_projects_images/explore-icons.svg"
+                         alt="explore icons">
+                    <h6 class="project__name">Строительство домов</h6>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="./images/our_projects_images/portfolio-3.svg" alt="project img">
+                    <img class="project-img__transparent-bg"
+                         src="./images/our_projects_images/yellow-transparent-bg.svg" alt="project img">
+                    <img class="project-img__explore-icons" src="./images/our_projects_images/explore-icons.svg"
+                         alt="explore icons">
+                    <h6 class="project__name">Кофейня</h6>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="./images/our_projects_images/portfolio-4.svg" alt="project img">
+                    <img class="project-img__transparent-bg"
+                         src="./images/our_projects_images/yellow-transparent-bg.svg" alt="project img">
+                    <img class="project-img__explore-icons" src="./images/our_projects_images/explore-icons.svg"
+                         alt="explore icons">
+                    <h6 class="project__name">Уникальные туры</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <div class="container">
+        <div class="inner-container">
+            <div class="team__square">
+                <img src="./images/team-photo.png" alt="team photo">
+                <div class="team__right-part">
+                    <h2 class="team__heading">Команда</h2>
+                    <div class="line dark-line"></div>
+                    <p class="team__text">
+                        Наша команда - это наша самая большая ценность.
+                        Мы трудились, чтобы собрать группу экспертов,
+                        чьи навыки дополняют друг друга.
+                        У членов нашей команды разные истории, но мы разделяем общую
+                        страсть к идеалу. Мы верим, чтобы оставаться
+                        профессионалом, нужно развиваться,
+                        поэтому мы постоянно ищем способы, как стать лучше
+                        в том, что мы делаем.
+                    </p>
+                    <button class="top-block__slider__details-btn">СМОТРЕТЬ ВИДЕО</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="latest-news">
+    <div class="container">
+        <div class="latest-news__inner-container">
+            <h2 class="latest-news__heading">Последние Новости</h2>
+            <div class="line dark-line"></div>
+
+            <div class="latest-news__news-item">
+                <img src="./images/latest-news/news-1.jpg" alt="news image">
+                <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                <div class="news-name-container">
+                    <span class="news-name">3Д в брендинге</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quote-block"></section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
