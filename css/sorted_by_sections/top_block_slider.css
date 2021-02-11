@@ -59,28 +59,17 @@
     cursor: pointer;
 }
 
-.top-slider__bullets {
-    width: 69px;
-    height: 15px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.slider-bullet {
-    height: 12px;
-    width: 12px;
+/*bullets*/
+.top-slider-bullet {
     background-color: #FFFFFF;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
 }
 
-.slider-bullet:hover {
+.top-slider-bullet:hover {
     background-color: transparent;
     border: 2px solid white;
 }
+
 
 
 .slider-switchers {

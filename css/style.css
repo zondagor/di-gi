@@ -1,4 +1,4 @@
-/* shared css rules */
+/* general css rules */
 
 :root {
     --dark-color: #2b4074;
@@ -6,9 +6,11 @@
     --dark-text: #4A4A4A;
 }
 
-* {
+*, *::before, *::after{
     box-sizing: border-box;
 }
+
+/*containers */
 
 .container {
     width: 1440px;
@@ -25,6 +27,21 @@
     width: 1140px;
 }
 
+.inner-container2 {
+    margin: 0 auto;
+    height: 100%;
+    width: 1140px;
+}
+
+.column_centrify {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*line*/
+
 .line {
     width: 120px;
     height: 8px;
@@ -37,3 +54,22 @@
 .light-line {
     background-color: #ffffff;
 }
+
+/*bullets*/
+
+.bullets-container {
+    width: 69px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bullet {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+

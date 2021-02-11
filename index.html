@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="css/sorted_by_sections/team-block.css"/>
     <link rel="stylesheet" href="css/sorted_by_sections/latest-news-block.css"/>
     <link rel="stylesheet" href="css/sorted_by_sections/quote_block.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/footer.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/move_up-section.css"/>
 </head>
 <body>
 <header class="main-header">
     <div class="container">
         <div class="inner-container">
-            <img src="images/header_logo.svg" alt="header logo"/>
+            <img src="images/main_logo.svg" alt="header logo"/>
             <div class="header__menu-button">
                 <i class="fas fa-bars"></i>
             </div>
@@ -42,10 +44,10 @@
                 <button class="top-block__slider__details-btn">ПОДРОБНЕЕ</button>
             </div>
 
-            <div class="top-slider__bullets">
-                <span class="slider-bullet"></span>
-                <span class="slider-bullet"></span>
-                <span class="slider-bullet"></span>
+            <div class="bullets-container">
+                <span class="bullet top-slider-bullet"></span>
+                <span class="bullet top-slider-bullet"></span>
+                <span class="bullet top-slider-bullet"></span>
             </div>
         </div>
     </div>
@@ -135,7 +137,7 @@
     </div>
 </section>
 
-<section class="our-projects">
+<section class="our-projects" id="our-projects">
     <div class="container centered">
         <div class="our-projects__inner-container">
             <div class="our_projects__heading">
@@ -180,7 +182,7 @@
     </div>
 </section>
 
-<section class="team">
+<section class="team" id="team">
     <div class="container">
         <div class="inner-container">
             <div class="team__square">
@@ -206,24 +208,157 @@
 
 </section>
 
-<section class="latest-news">
+<section class="latest-news" id="latest-news">
     <div class="container">
         <div class="latest-news__inner-container">
-            <h2 class="latest-news__heading">Последние Новости</h2>
-            <div class="line dark-line"></div>
+            <div class="latest-news__heading-and-line">
+                <h2 class="latest-news__heading">Последние Новости</h2>
+                <div class="line dark-line"></div>
+            </div>
 
-            <div class="latest-news__news-item">
-                <img src="./images/latest-news/news-1.jpg" alt="news image">
-                <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
-                <div class="news-name-container">
-                    <span class="news-name">3Д в брендинге</span>
+            <div class="masonry">
+                <div class="news-item">
+                    <img src="./images/latest-news/news-1.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">3Д в брендинге</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-5.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Уникальный дизайн</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-2.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Контекстная реклама</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-6.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Взгляд со стороны</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-3.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Графика</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-7.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Соц сети и их польза</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-4.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Корпоративная культура</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/latest-news/news-8.jpg" alt="news image">
+                    <img class="news-img__info-icon" src="./images/latest-news/info%20button.svg" alt="info icon">
+                    <div class="news-name-container">
+                        <span class="news-name">Эксклюзивность</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="quote-block"></section>
+<section class="quote-block">
+    <div class="container">
+        <div class="inner-container2 column_centrify height">
+            <i class="fas fa-quote-right"></i>
+            <q class="quote-block__quote">Если нужно создавать либо повышать имидж компании,
+                то <span class="quote-block__quote__digi-word">диджитал-маркетинг</span> является наиболее
+                подходящим</q>
+            <p class="quote-block__qute__author">- Маргарита Акулич</p>
+
+            <div class="bullets-container">
+                <span class="bullet quote-block__bullet"></span>
+                <span class="bullet quote-block__bullet"></span>
+                <span class="bullet quote-block__bullet"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="inner-container2 digi-logo-before">
+            <div class="footer-centrify">
+                <h4 class="footer-info">Мы хотели бы услышать все о вашем проекте.
+                    Свяжись с нами.</h4>
+
+                <div class="footer-icons">
+                    <div class="footer-grid-cell"><i class="fab fa-facebook-f footer__icon"></i></div>
+                    <div class="footer-grid-cell"><i class="fab fa-google-plus-g footer__icon"></i></div>
+                    <div class="footer-grid-cell"><i class="fab fa-twitter footer__icon"></i></div>
+                    <div class="footer-grid-cell"><i class="fab fa-pinterest footer__icon"></i></div>
+                </div>
+
+                <div class="footer__info-blocks">
+                    <div class="footer__info-block">
+                        <h4 class="footer__info-block__heading">КОНТАКТЫ</h4>
+                        <ul class="footer-info-block__list">
+                            <li><a class="footer-info-block__reference" href="#">+80 555 55 66</a></li>
+                            <li><a class="footer-info-block__reference" href="#">digi@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info-block">
+                        <h4 class="footer__info-block__heading">АДРЕС</h4>
+                        <address class="footer__address">
+                            <a class="footer-info-block__reference"
+                               href="https://www.google.com/maps/place/Nauky+Ave,+107,+Kyiv,+02000/@50.3789093,30.5344543,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c61da857387f:0xa4118f07bff1bfd!8m2!3d50.3789059!4d30.536643">Пр.
+                                Науки 107
+                                Kиев / Украина</a>
+                        </address>
+                    </div>
+                    <div class="footer__info-block">
+                        <h4 class="footer__info-block__heading">ПОМОЩЬ</h4>
+                        <ul class="footer-info-block__list">
+                            <li><a class="footer-info-block__reference" href="#">Как с нами связаться?</a></li>
+                            <li><a class="footer-info-block__reference" href="#">Что такое диджитал?</a></li>
+                            <li><a class="footer-info-block__reference" href="#">Стоимость услуг</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info-block">
+                        <h4 class="footer__info-block__heading">МЕНЮ</h4>
+                        <ul class="footer-info-block__list">
+                            <li><a class="footer-info-block__reference" href="#our-projects">Наши проекты</a></li>
+                            <li><a class="footer-info-block__reference" href="#team">Команда</a></li>
+                            <li><a class="footer-info-block__reference" href="#latest-news">Блог</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class="move-up">
+    <div class="container">
+        <div class="inner-container2 flex-end">
+            <a class="move-up__word" href="#">
+                ВВЕРХ
+                <img src="./images/previous%20message.svg" alt="move up arrow">
+            </a>
+        </div>
+    </div>
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js"></script>

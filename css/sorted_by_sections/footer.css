@@ -1,0 +1,128 @@
+.footer {
+    height: 639px;
+    background-color: var(--dark-color);
+}
+
+.digi-logo-before {
+    position: relative;
+}
+
+.digi-logo-before::before {
+    content: url("../../images/main_logo.svg");
+    position: absolute;
+    background-color: var(--dark-color);
+    height: 60px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    top: -30px;
+    left: calc(50% - 115px);
+}
+
+.footer-centrify {
+    padding-top: 140px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 724px;
+    height: 61px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
+
+
+.footer-icons {
+    display: flex;
+}
+
+.footer__icon {
+    width: 12px;
+    height: 14px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.footer-grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    height: 60px;
+    width: 280px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-grid-cell:hover {
+    background-color: white;
+}
+
+.footer-grid-cell:hover .footer__icon {
+    color: var(--dark-text);
+}
+
+.footer-grid-cell:last-child {
+    border-right: 1px solid var(--dark-color);
+}
+
+.footer__info-blocks {
+    display: flex;
+}
+
+.footer__info-block {
+    width: 280px;
+}
+
+.footer__info-block__heading {
+    width: 125px;
+    height: 22px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+
+    color: var(--light-color);
+}
+
+.footer-info-block__list {
+    list-style-type: none;
+}
+
+.footer-info-block__reference {
+    width: 90px;
+    height: 37px;
+    text-decoration: none;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer__address {
+    width: 85px;
+}

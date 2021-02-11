@@ -1,12 +1,52 @@
 .quote-block {
     height: 530px;
-    background: red;
+}
+
+.fa-quote-right {
+    font-size: 34px;
+    color: var(--dark-color);
+}
+
+/*bullets*/
+.quote-block__bullet {
+    background-color: var(--dark-color);
+}
+
+.quote-block__bullet:hover {
+    background-color: transparent;
+    border: 3px solid var(--dark-color);
+}
+
+.quote-block__quote {
+    width: 988px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--dark-text);
+}
+
+.quote-block__quote__digi-word {
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.quote-block__qute__author {
+    width: 270px;
+    height: 28px;
+
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+
+    color: var(--dark-text);
 }
 
 
-
-
-
-
-
-
+.height {
+    height: 380px;
+    margin-top: 40px;
+}

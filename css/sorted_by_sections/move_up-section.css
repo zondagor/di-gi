@@ -1,0 +1,25 @@
+.move-up {
+    height: 42px;
+    background-color: var(--light-color);
+}
+
+.move-up__word {
+    text-decoration: none;
+
+    width: 99px;
+    height: 24px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: var(--dark-color);
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
