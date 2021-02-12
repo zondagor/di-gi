@@ -6,36 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Di-Gi</title>
     <script src="https://kit.fontawesome.com/f277d011bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/top_block_header.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/top_block_slider.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/top_block_footer.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/services_block.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/our_projects_block.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/team-block.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/latest-news-block.css"/>
-    <link rel="stylesheet" href="css/sorted_by_sections/quote_block.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/header.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/top_block_slider_section.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/top-block-footer-section.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/services_section.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/our_projects_section.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/team-section.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/latest-news-section.css"/>
+    <link rel="stylesheet" href="css/sorted_by_sections/quotes_section.css"/>
     <link rel="stylesheet" href="css/sorted_by_sections/footer.css"/>
     <link rel="stylesheet" href="css/sorted_by_sections/move_up-section.css"/>
 </head>
 <body>
+
 <header class="main-header">
     <div class="container">
-        <div class="inner-container">
-            <img src="images/main_logo.svg" alt="header logo"/>
-            <div class="header__menu-button">
+        <div class="inner-container x-space-between">
+            <img src="images/main_logo.svg" alt="di-gi logo"/>
+            <div class="header__menu-button xy-centered-content">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </div>
 </header>
 
-<section class="top-block-slider">
-    <div class="container">
-        <div class="centered">
-            <div class="together">
+<section class="top-block-slider-section">
+    <div class="container xy-centered-content">
+        <div class="top-block-slider__inner-content y-space-between">
+            <div class="top-block-slider__upper-content y-space-between">
                 <h1 class="top-block__slider__heading">МЫСЛИ ГЛОБАЛЬНО</h1>
                 <p class="top-block__slider__description">
                     Di Gі - это диджитал агентство полного цикла, направленное на самый
@@ -51,18 +56,18 @@
             </div>
         </div>
     </div>
-    <div class="slider-switchers">
-        <div class="arrow-container padding1"><i class="arrow left"></i></div>
-        <div class="arrow-container padding2"><i class="arrow right"></i></div>
+    <div class="top-block-slider__slider-switchers">
+        <div class="arrow-container first-arrow-padding"><i class="arrow left-arrow"></i></div>
+        <div class="arrow-container second-arrow-padding"><i class="arrow right-arrow"></i></div>
     </div>
 </section>
 
 <section class="top-block-footer">
     <div class="container">
-        <div class="inner-container">
-            <div class="top-block-footer_left">
-                <h6 class="top-block-footer__heading">Вы полюбите нас с первой встречи!</h6>
-                <p>Мы предоставляем комплексный подход к продвижению компании,
+        <div class="inner-container x-space-between">
+            <div class="top-block-footer_text-container y-space-between">
+                <h2 class="top-block-footer__heading">Вы полюбите нас с первой встречи!</h2>
+                <p class="top-block-footer__info">Мы предоставляем комплексный подход к продвижению компании,
                     продуктов и услуг в цифровой сфере.</p>
             </div>
             <button class="top-block-footer__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
@@ -71,9 +76,8 @@
 </section>
 
 <section class="services">
-    <div class="container">
-        <div class="services__inner-container">
-            <div class="services__left-part">
+    <div class="container services__inner-container">
+            <div class="services__general-info">
                 <h2 class="services__heading">Сервис</h2>
                 <div class="services__description-container">
                     <p class="services__description">От идеи до незабываемого и измеримого результата.</p>
@@ -82,7 +86,7 @@
                         измерения производительности</p>
                 </div>
             </div>
-            <div class="services__right-part">
+            <div class="service-items">
                 <div class="service-item">
                     <img class="service-item__logo" src="./images/services_icons/strategy.png" alt="strategy logo">
                     <h6 class="service-item__heading">СТРАТЕГИЯ</h6>
@@ -133,12 +137,11 @@
                     <span class="service-item__details">ПОДРОБНЕЕ →</span>
                 </div>
             </div>
-        </div>
     </div>
 </section>
 
 <section class="our-projects" id="our-projects">
-    <div class="container centered">
+    <div class="container top-block-slider__inner-content">
         <div class="our-projects__inner-container">
             <div class="our_projects__heading">
                 <h2 class="our_projects__heading__text">Наши Проекты</h2>
@@ -184,7 +187,7 @@
 
 <section class="team" id="team">
     <div class="container">
-        <div class="inner-container">
+        <div class="inner-container10">
             <div class="team__square">
                 <img src="./images/team-photo.png" alt="team photo">
                 <div class="team__right-part">
@@ -280,7 +283,7 @@
 
 <section class="quote-block">
     <div class="container">
-        <div class="inner-container2 column_centrify height">
+        <div class="inner-container column_centrify height">
             <i class="fas fa-quote-right"></i>
             <q class="quote-block__quote">Если нужно создавать либо повышать имидж компании,
                 то <span class="quote-block__quote__digi-word">диджитал-маркетинг</span> является наиболее
@@ -298,7 +301,7 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="inner-container2 digi-logo-before">
+        <div class="inner-container digi-logo-before">
             <div class="footer-centrify">
                 <h4 class="footer-info">Мы хотели бы услышать все о вашем проекте.
                     Свяжись с нами.</h4>
@@ -351,7 +354,7 @@
 
 <section class="move-up">
     <div class="container">
-        <div class="inner-container2 flex-end">
+        <div class="inner-container flex-end">
             <a class="move-up__word" href="#">
                 ВВЕРХ
                 <img src="./images/previous%20message.svg" alt="move up arrow">

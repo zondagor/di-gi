@@ -9,9 +9,6 @@
     background-color: var(--light-color);
     border-radius: 3px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header__menu-button:hover {

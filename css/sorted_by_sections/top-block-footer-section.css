@@ -1,0 +1,49 @@
+.top-block-footer {
+    background-color: var(--dark-color);
+    height: 192px;
+    color: #ffffff;
+}
+
+.top-block-footer_text-container {
+    width: 500px;
+    height: 80px;
+    align-items: flex-start;
+}
+
+.top-block-footer__heading {
+    width: 410px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.top-block-footer__info {
+    width: 500px;
+    height: 42px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.top-block-footer__btn {
+    cursor: pointer;
+    background: var(--light-color);
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: var(--dark-color);
+}
+
+.top-block-footer__btn:hover {
+    color: white;
+    background: var(--dark-color);
+    border: 1px solid white;
+}

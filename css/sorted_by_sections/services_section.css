@@ -1,10 +1,8 @@
 .services {
     height: 546px;
-    padding-bottom: 15px;
-    padding-top: 15px;
 }
 
-.services__left-part {
+.services__general-info {
     width: 515px;
     display: flex;
     flex-direction: column;
@@ -40,9 +38,10 @@
 }
 
 .services__inner-container {
-    height: 100%;
     display: flex;
     padding-left: 62px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .services__description-container {
@@ -52,7 +51,7 @@
     justify-content: space-between;
 }
 
-.services__right-part {
+.service-items {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
