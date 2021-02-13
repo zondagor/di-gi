@@ -2,55 +2,55 @@
     height: 546px;
 }
 
+.services__inner-container {
+    width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    padding: 15px 0px 15px 0px;
+}
+
 .services__general-info {
-    width: 515px;
+    width: 360px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-right: 213px;
+    margin-right: 100px;
 }
 
 .services__heading {
-    font-family: Roboto Condensed monospace;
-    font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 56px;
     color: var(--dark-color);
-    padding-bottom: 70px;
+    margin: 90px 0px 60px 0px;
 }
 
 .services__description {
-    color: #4A4A4A;
-    font-family: Roboto Condensed monospace;
-    font-style: normal;
+    color: var(--dark-text);
     font-weight: normal;
     font-size: 24px;
     line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+    /*width: 393px;*/
+    /*height: 60px;*/
+    margin-bottom: 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
 }
 
 .services__text {
-    font-family: Roboto Condensed monospace;
-    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #797979;
+    width: 351px;
+    height: 68px;
 }
 
-.services__inner-container {
-    display: flex;
-    padding-left: 62px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-.services__description-container {
-    height: 202px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+/*items below*/
 .service-items {
     display: flex;
     flex-wrap: wrap;
@@ -59,16 +59,13 @@
 
 .service-item {
     border: 4px solid #ffffff;
-
     width: 212px;
     height: 255px;
     cursor: pointer;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     transition: 0.7s;
 }
 
@@ -109,7 +106,7 @@
 }
 
 .service-item__logo {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .service-item__details {

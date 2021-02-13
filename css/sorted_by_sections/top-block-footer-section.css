@@ -4,9 +4,19 @@
     color: #ffffff;
 }
 
+.top-block-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .top-block-footer_text-container {
     width: 500px;
     height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
 }
 

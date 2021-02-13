@@ -5,13 +5,29 @@
     background-size: cover;
 }
 
+.top-block-slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .top-block-slider__inner-content {
     height: 548px;
     padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-block-slider__upper-content {
     height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-block__slider__heading {

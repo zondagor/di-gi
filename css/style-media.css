@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1439px) {
+    .container {
+        width: 935px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .container {
+        width: 690px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .container {
+        width: 274px;
+    }
+
+    .bullets-container {
+        width: 52px;
+    }
+
+    .bullet {
+        height: 8px;
+        width: 8px;
+    }
+
+}

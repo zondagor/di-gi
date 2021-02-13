@@ -1,6 +1,13 @@
 .main-header {
     background-color: var(--dark-color);
     height: 100px;
+    width: 100%;
+}
+
+.main-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__menu-button {
