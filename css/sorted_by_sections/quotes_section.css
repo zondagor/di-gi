@@ -23,7 +23,7 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: var(--dark-text);
+    color: var(--black);
 }
 
 .quote-block__quote__digi-word {
@@ -42,7 +42,7 @@
     line-height: 28px;
     letter-spacing: 2px;
 
-    color: var(--dark-text);
+    color: var(--black);
 }
 
 

@@ -1,20 +1,21 @@
-.services {
+.services-section {
     height: 546px;
 }
 
 .services__inner-container {
-    width: 1300px;
+    width: 1278px;
     margin: 0 auto;
     height: 100%;
     display: flex;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0 15px 0;
 }
 
 .services__general-info {
+    height: 399px;
     width: 360px;
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 79px;
 }
 
 .services__heading {
@@ -22,21 +23,19 @@
     font-size: 48px;
     line-height: 56px;
     color: var(--dark-color);
-    margin: 90px 0px 60px 0px;
+    margin: 90px 0 60px 0;
 }
 
 .services__description {
-    color: var(--dark-text);
+    color: var(--black);
     font-weight: normal;
     font-size: 24px;
     line-height: 26px;
     font-family: 'Roboto', sans-serif;
-    /*width: 393px;*/
-    /*height: 60px;*/
     margin-bottom: 30px;
 }
 
-.margin-bottom {
+.services_line {
     margin-bottom: 30px;
 }
 
@@ -55,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 505px;
 }
 
 .service-item {
@@ -70,15 +70,13 @@
 }
 
 .service-item__heading {
-    color: #4A4A4A;
+    color: var(--black);
     letter-spacing: 2px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .service-item:hover {
@@ -87,7 +85,7 @@
 
 .service-item:hover .service-item__description {
     display: block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .service-item:hover .service-item__details {
@@ -95,12 +93,10 @@
 }
 
 .service-item__description {
-    font-family: Roboto Condensed monospace;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    color: #9B9B9B;
+    color: var(--gray);
     text-align: center;
     display: none;
 }
@@ -110,8 +106,6 @@
 }
 
 .service-item__details {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;

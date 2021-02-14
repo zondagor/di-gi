@@ -76,7 +76,7 @@
 }
 
 .footer-grid-cell:hover .footer__icon {
-    color: var(--dark-text);
+    color: var(--black);
 }
 
 .footer-grid-cell:last-child {

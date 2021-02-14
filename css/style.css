@@ -3,7 +3,8 @@
 :root {
     --dark-color: #2b4074;
     --light-color: #F9F6E5;
-    --dark-text: #4A4A4A;
+    --black: #4A4A4A;
+    --gray: #9B9B9B;
 }
 
 *, *::before, *::after{
