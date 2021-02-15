@@ -11,7 +11,7 @@
 }
 
 .top-block-footer_text-container {
-    width: 500px;
+    max-width: 500px;
     height: 80px;
 
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .top-block-footer__heading {
-    width: 410px;
+    max-width: 410px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -29,7 +29,7 @@
 }
 
 .top-block-footer__info {
-    width: 500px;
+    max-width: 500px;
     height: 42px;
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
@@ -40,7 +40,7 @@
 .top-block-footer__btn {
     cursor: pointer;
     background: var(--light-color);
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     border-radius: 3px;
 

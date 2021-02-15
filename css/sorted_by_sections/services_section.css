@@ -1,9 +1,10 @@
 .services-section {
     height: 546px;
+    background-color: white;
 }
 
 .services__inner-container {
-    width: 1278px;
+    max-width: 1288px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -12,10 +13,11 @@
 
 .services__general-info {
     height: 399px;
-    width: 360px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     margin-right: 79px;
+    padding-left: 20px;
 }
 
 .services__heading {
@@ -45,7 +47,7 @@
     line-height: 24px;
     font-family: 'Roboto', sans-serif;
     color: #797979;
-    width: 351px;
+    max-width: 351px;
     height: 68px;
 }
 
