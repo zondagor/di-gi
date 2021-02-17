@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 850px) {
     .services-section {
-        height: 1400px;
+        height: 1474px;
     }
 
     .services__heading {
@@ -67,7 +67,7 @@
 
 @media only screen and (max-width: 480px) {
     .services-section {
-        height: 2700px;
+        height: 2728px;
     }
 
     .services__inner-container {
