@@ -3,11 +3,16 @@
     background-color: var(--dark-color);
 }
 
-.digi-logo-before {
+.footer-centrify {
     position: relative;
+    padding-top: 140px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.digi-logo-before::before {
+.footer-centrify::before {
     content: url("../../images/main_logo.svg");
     position: absolute;
     background-color: var(--dark-color);
@@ -19,42 +24,19 @@
     left: calc(50% - 115px);
 }
 
-.footer-centrify {
-    padding-top: 140px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .footer-info {
-    width: 724px;
+    max-width: 724px;
     height: 61px;
-
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 2px;
-
     color: #FFFFFF;
 }
-
 
 .footer-icons {
     display: flex;
-}
-
-.footer__icon {
-    width: 12px;
-    height: 14px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 14px;
-    color: #FFFFFF;
 }
 
 .footer-grid-cell {
@@ -69,6 +51,16 @@
     width: 280px;
     cursor: pointer;
     text-align: center;
+}
+
+.footer__icon {
+    width: 12px;
+    height: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
 }
 
 .footer-grid-cell:hover {
@@ -94,14 +86,10 @@
 .footer__info-block__heading {
     width: 125px;
     height: 22px;
-
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 2px;
-
     color: var(--light-color);
 }
 
@@ -113,13 +101,10 @@
     width: 90px;
     height: 37px;
     text-decoration: none;
-
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
-
     color: #FFFFFF;
 }
 
