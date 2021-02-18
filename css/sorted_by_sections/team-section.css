@@ -1,46 +1,54 @@
-.team {
+.team-section {
     height: 580px;
 }
 
-.team__inner-container {
+.team-section__inner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    width: 1140px;
 }
 
-.team__square {
-    display: flex;
-    margin: auto;
-}
-
-.team__right-part {
+.team-section__right-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 100px;
+    height: 415px;
 }
 
-.team__heading {
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: normal;
-    font-weight: normal;
+.team-section__heading {
     font-size: 48px;
+    font-weight: normal;
     line-height: 56px;
-
     color: var(--dark-color);
 }
 
-.team__text {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+.team-section__desctiption {
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-
-    color: #9B9B9B;
+    color: var(--gray);
+    max-width: 573px;
 }
 
+.team-section__button {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--light-color);
+    background: var(--dark-color);
+    border-radius: 3px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
 
+.team-section__button:hover {
+    color: var(--dark-color);
+    background: var(--light-color);
+    border: 2px solid var(--dark-color);
+}
 
