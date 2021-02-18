@@ -28,39 +28,6 @@ body {
     align-items: center;
 }
 
-/*todo delete later*/
-.x-space-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*todo delete later*/
-.y-space-between {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*todo remove later*/
-.inner-container10 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    height: 100%;
-    width: 1140px;
-}
-
-/*todo remove later ?????*/
-.column_centrify {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 /*line*/
 
 .line {
