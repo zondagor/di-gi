@@ -4,8 +4,12 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.css">
+
     <title>Di-Gi</title>
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg"/>
     <script src="https://kit.fontawesome.com/f277d011bc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -289,22 +293,27 @@
 </section>
 
 <section class="quote-section">
-    <div class="container xy-centered-content">
-        <div class="quote-section__inner-container">
+    <div class="container quote-section__inner-container" id="quote-section-owl-carousel">
+        <div class="quote-section__quote-container">
             <i class="fas fa-quote-right"></i>
             <q class="quote-block__quote">Если нужно создавать либо повышать имидж компании, <br/>
                 то <span class="quote-block__quote__digi-word">диджитал-маркетинг</span> является наиболее
                 подходящим</q>
             <p class="quote-block__quote__author">- Маргарита Акулич</p>
-
-            <div class="bullets-container">
-                <span class="bullet quote-block__bullet"></span>
-                <span class="bullet quote-block__bullet"></span>
-                <span class="bullet quote-block__bullet"></span>
-            </div>
+        </div>
+        <div class="quote-section__quote-container">
+            <i class="fas fa-quote-right"></i>
+            <q class="quote-block__quote">Что разум человека может постигнуть и во что он может поверить, того он способен достичь</q>
+            <p class="quote-block__quote__author">- Наполеон Хилл</p>
+        </div>
+        <div class="quote-section__quote-container">
+            <i class="fas fa-quote-right"></i>
+            <q class="quote-block__quote">Наука — это организованные знания, мудрость — это организованная жизнь.</q>
+            <p class="quote-block__quote__author">- Иммануил Кант</p>
         </div>
     </div>
 </section>
+
 
 <footer class="footer">
     <div class="container">
@@ -366,19 +375,31 @@
     </div>
 </section>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-<!--<script src="js/main.js"></script>-->
 
-<!--&lt;!&ndash;&lt;!&ndash; Important Owl stylesheet &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<link rel="stylesheet" href="owl-carousel/owl.carousel.css">&ndash;&gt;-->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#quote-section-owl-carousel").owlCarousel({
+            autoPlay: 4000,
+            items : 1, //1 items above 1000px browser width
+            itemsDesktop : [1000,1], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,1], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : 1
+        });
 
-<!--&lt;!&ndash;&lt;!&ndash; Default Theme &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;<link rel="stylesheet" href="owl-carousel/owl.theme.css">&ndash;&gt;-->
+        // Custom Navigation Events
+        $(".next").click(function () {
+            owl.trigger('owl.next');
+        })
+        $(".prev").click(function () {
+            owl.trigger('owl.prev');
+        })
+    });
+</script>
 
-<!--&lt;!&ndash;  jQuery 1.7+  &ndash;&gt;-->
-<!--<script src="jquery-1.9.1.min.js"></script>-->
 
-<!--&lt;!&ndash; Include js plugin &ndash;&gt;-->
-<!--<script src="assets/owl-carousel/owl.carousel.js"></script>-->
 </body>
 </html>
