@@ -17,14 +17,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .bullets-container {
-        width: 31px;
-    }
 
-    .bullet {
-        height: 6px;
-        width: 6px;
-    }
 }
 
 @media only screen and (max-width: 320px) {

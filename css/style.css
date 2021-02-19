@@ -1,5 +1,4 @@
 /* general css rules */
-
 :root {
     --dark-color: #2b4074;
     --light-color: #F9F6E5;
@@ -29,7 +28,6 @@ body {
 }
 
 /*line*/
-
 .line {
     width: 100px;
     height: 8px;
@@ -42,22 +40,3 @@ body {
 .light-line {
     background-color: #ffffff;
 }
-
-/*bullets todo remove later*/
-
-.bullets-container {
-    width: 69px;
-    height: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.bullet {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-

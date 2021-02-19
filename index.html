@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-    <meta property="og:title" content="Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении "/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zondagor.github.io/di-gi/" />
+    <meta property="og:title"
+          content="Диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении "/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://zondagor.github.io/di-gi/"/>
     <meta property="og:image" content="https://zondagor.github.io/di-gi/images/opg.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
@@ -61,7 +62,7 @@
 
 <section class="top-block-slider-section">
     <div class="container top-block-slider-container">
-        <div class="top-block-slider__inner-content">
+        <div class="top-block-slider__inner-content" id="top-block-slider-section-owl-carousel">
             <div class="top-block-slider__upper-content">
                 <h1 class="top-block__slider__heading">МЫСЛИ ГЛОБАЛЬНО</h1>
                 <p class="top-block__slider__description">
@@ -70,16 +71,24 @@
                 </p>
                 <button class="top-block__slider__details-btn">ПОДРОБНЕЕ</button>
             </div>
-            <div class="bullets-container">
-                <span class="bullet top-slider-bullet"></span>
-                <span class="bullet top-slider-bullet"></span>
-                <span class="bullet top-slider-bullet"></span>
+            <div class="top-block-slider__upper-content">
+                <h1 class="top-block__slider__heading">Another text area</h1>
+                <p class="top-block__slider__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis minus optio perspiciatis provident
+                    quas quidem sequi sint voluptatem.
+                </p>
+                <button class="top-block__slider__details-btn">ПОДРОБНЕЕ</button>
+            </div>
+            <div class="top-block-slider__upper-content">
+                <h1 class="top-block__slider__heading">Interesting content</h1>
+                <p class="top-block__slider__description">description of that content</p>
+                <button class="top-block__slider__details-btn">ПОДРОБНЕЕ</button>
             </div>
         </div>
     </div>
     <div class="top-block-slider__slider-switchers">
-        <div class="arrow-container first-arrow-padding"><i class="arrow left-arrow"></i></div>
-        <div class="arrow-container second-arrow-padding"><i class="arrow right-arrow"></i></div>
+        <div class="arrow-container first-arrow-padding prev-slide"><i class="arrow left-arrow"></i></div>
+        <div class="arrow-container second-arrow-padding next-slide"><i class="arrow right-arrow"></i></div>
     </div>
 </section>
 
@@ -313,7 +322,8 @@
         </div>
         <div class="quote-section__quote-container">
             <i class="fas fa-quote-right"></i>
-            <q class="quote-block__quote">Что разум человека может постигнуть и во что он может поверить, того он способен достичь</q>
+            <q class="quote-block__quote">Что разум человека может постигнуть и во что он может поверить, того он
+                способен достичь</q>
             <p class="quote-block__quote__author">- Наполеон Хилл</p>
         </div>
         <div class="quote-section__quote-container">
@@ -323,7 +333,6 @@
         </div>
     </div>
 </section>
-
 
 <footer class="footer">
     <div class="container">
@@ -385,7 +394,6 @@
     </div>
 </section>
 
-
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
@@ -393,19 +401,27 @@
     $(document).ready(function () {
         $("#quote-section-owl-carousel").owlCarousel({
             autoPlay: 4000,
-            items : 1, //1 items above 1000px browser width
-            itemsDesktop : [1000,1], //5 items between 1000px and 901px
-            itemsDesktopSmall : [900,1], // betweem 900px and 601px
-            itemsTablet: [600,1], //2 items between 600 and 0
-            itemsMobile : 1
+            items: 1, //1 item above 1000px browser width
+            itemsDesktop: [1000, 1], //1 item between 1000px and 901px
+            itemsDesktopSmall: [900, 1], // betweem 900px and 601px
+            itemsTablet: [600, 1], //1 item between 600 and 0
+            itemsMobile: 1
         });
 
-        // Custom Navigation Events
-        $(".next").click(function () {
-            owl.trigger('owl.next');
+        const topSectionSlider = $("#top-block-slider-section-owl-carousel").owlCarousel({
+            autoPlay: 4000,
+            items: 1, //1 items above 1000px browser width
+            itemsDesktop: [1000, 1], //1 item between 1000px and 901px
+            itemsDesktopSmall: [900, 1], // betweem 900px and 601px
+            itemsTablet: [600, 1], //1 item between 600 and 0
+            itemsMobile: 1
+        });
+
+        $(".next-slide").click(function () {
+            topSectionSlider.trigger('owl.next');
         })
-        $(".prev").click(function () {
-            owl.trigger('owl.prev');
+        $(".prev-slide").click(function () {
+            topSectionSlider.trigger('owl.prev');
         })
     });
 </script>

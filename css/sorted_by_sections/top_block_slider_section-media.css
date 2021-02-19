@@ -83,6 +83,15 @@
         font-size: 28px;
         width: 169px;
     }
+
+    .top-block-slider-section .owl-theme .owl-controls {
+        margin-top: 0;
+    }
+
+    .top-block-slider-section .owl-theme .owl-controls .owl-page span {
+        height: 8px;
+        width: 8px;
+    }
 }
 
 @media only screen and (max-width: 320px) {

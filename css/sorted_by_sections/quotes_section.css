@@ -51,11 +51,7 @@
     opacity: 1;
 }
 
-.quote-section .owl-theme .owl-controls .active span{
-    background-color: transparent;
-    border: 1px solid var(--dark-color);
-}
-
+.quote-section .owl-theme .owl-controls .active span,
 .quote-section .owl-theme .owl-controls .owl-page:hover span{
     background-color: transparent;
     border: 1px solid var(--dark-color);
